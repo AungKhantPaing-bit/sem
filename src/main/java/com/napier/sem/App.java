@@ -4,6 +4,22 @@ import java.sql.*;
 
 public class App
 {
+
+    public static void main(String[] args)
+    {
+        // Create new Application
+        App a = new App();
+
+        // Connect to database
+        a.connect();
+        // Get Employee
+        Employee emp = a.getEmployee(255530);
+        // Display results
+        a.displayEmployee(emp);
+        // Disconnect from database
+        a.disconnect();
+    }
+
     /**
      * Connection to MySQL database.
      */
@@ -25,7 +41,7 @@ public class App
             System.exit(-1);
         }
 
-        int retries = 10;
+        int retries = 100;
         for (int i = 0; i < retries; ++i)
         {
             System.out.println("Connecting to database...");
@@ -103,22 +119,6 @@ public class App
         }
     }
 
-    public static void main(String[] args)
-    {
-        // Create new Application
-        App a = new App();
-
-        // Connect to database
-        a.connect();
-        // Get Employee
-        Employee emp = a.getEmployee(255530);
-        // Display results
-        a.displayEmployee(emp);
-
-        // Disconnect from database
-        a.disconnect();
-    }
-
     public void displayEmployee(Employee emp)
     {
         if (emp != null)
@@ -131,6 +131,10 @@ public class App
                             + "Salary:" + emp.salary + "\n"
                             + emp.dept_name + "\n"
                             + "Manager: " + emp.manager + "\n");
+        }
+        else
+        {
+            System.out.println("no data");
         }
     }
 }
