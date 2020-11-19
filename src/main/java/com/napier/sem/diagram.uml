@@ -3,18 +3,12 @@
   <ID>JAVA</ID>
   <OriginalElement />
   <nodes>
-    <node x="0.0" y="384.0">com.napier.sem.App</node>
+    <node x="-302.0" y="310.0">com.napier.sem.App</node>
     <node x="43.5" y="148.0">com.napier.sem.Employee</node>
-    <node x="55.0" y="-12.0">com.napier.sem.Department</node>
+    <node x="55.0" y="0.0">com.napier.sem.Department</node>
   </nodes>
   <notes />
   <edges>
-    <edge source="com.napier.sem.App" target="com.napier.sem.Employee">
-      <point x="-65.25" y="-83.0" />
-      <point x="65.25" y="359.0" />
-      <point x="87.0" y="359.0" />
-      <point x="-43.5" y="93.0" />
-    </edge>
     <edge source="com.napier.sem.Department" target="com.napier.sem.Employee">
       <point x="37.75" y="49.0" />
       <point x="168.25" y="123.0" />
@@ -27,10 +21,16 @@
       <point x="92.75" y="123.0" />
       <point x="-37.75" y="49.0" />
     </edge>
+    <edge source="com.napier.sem.App" target="com.napier.sem.Employee">
+      <point x="-65.25" y="-105.0" />
+      <point x="65.25" y="359.0" />
+      <point x="87.0" y="359.0" />
+      <point x="-43.5" y="93.0" />
+    </edge>
   </edges>
-  <settings layout="Hierarchic Group" zoom="1.0" x="0.0" y="180.5" />
+  <settings layout="Hierarchic Group" zoom="1.0" x="0.0" y="307.5" />
   <SelectedNodes>
-    <node>com.napier.sem.Department</node>
+    <node>com.napier.sem.App</node>
   </SelectedNodes>
   <Categories>
     <Category>Fields</Category>
